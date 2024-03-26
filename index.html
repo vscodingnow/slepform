@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>香港學生睡眠調查問卷</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    hr {
+      border-top: 1px solid #000000;
+      margin: 0;
+      padding: 0;
+    }
+    
+    label {
+      font-size: 20px;
+      color: #2d22cf;
+    }
+
+    h1 {
+      color: #007bff;
+      background-color: #97dbdb;
+      font-size: 36px;
+      text-align: center;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    *{
+    scrollbar-width: thin;
+    box-sizing: border-box;
+    }
+
+    div{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d1d1d162;
+    }
+    
+    .submit-button {
+      background-color: #604d94;
+      color: rgb(0, 0, 0);
+      padding: 30px 40px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: #8e6abd;
+    }
+  </style>
+</head>
+<body>
+  <form method="post">
+    <h1>---香港學生睡眠調查問卷---</h1>
+    <hr>
+    <div>
+    <h3>性別（男/女）</h3>
+    <label><input type="radio" name="gender" value="男"> 男</label><br>
+    <label><input type="radio" name="gender" value="女"> 女</label>
+    </div>
+    <div>
+    <h3>睡眠質素 (1 - 5) 評分從低至高</h3>
+    <label><input type="radio" name="sleep_quality" value="1"> 1</label><br>
+    <label><input type="radio" name="sleep_quality" value="2"> 2</label><br>
+    <label><input type="radio" name="sleep_quality" value="3"> 3</label><br>
+    <label><input type="radio" name="sleep_quality" value="4"> 4</label><br>
+    <label><input type="radio" name="sleep_quality" value="5"> 5</label>
+    </div>
+    <div>
+    <h3>普遍睡眠時段</h3>
+    <label><input type="radio" name="sleep_schedule" value="8:00 - 10:00"> 8:00 - 10:00</label><br>
+    <label><input type="radio" name="sleep_schedule" value="10:01 - 12:00"> 10:01 - 12:00</label><br>
+    <label><input type="radio" name="sleep_schedule" value="12:01 - 1:00"> 12:01 - 1:00</label><br>
+    <label><input type="radio" name="sleep_schedule" value="1:00後"> 1:00後</label>
+    </div>
+    <div>
+    <h3>平均每天睡眠時間</h3>
+    <label><input type="radio" name="daily_sleep_duration" value="少於4小時"> 少於4小時</label><br>
+    <label><input type="radio" name="daily_sleep_duration" value="4 - 6小時"> 4 - 6小時</label><br>
+    <label><input type="radio" name="daily_sleep_duration" value="6 - 8小時"> 6 - 8小時</label><br>
+    <label><input type="radio" name="daily_sleep_duration" value="8 - 10小時"> 8 - 10小時</label><br>
+    <label><input type="radio" name="daily_sleep_duration" value="超過10小時"> 超過10小時</label>
+    </div>
+    <div>
+    <h3>有沒有午睡習慣?</h3>
+    <label><input type="radio" name="nap_habit" value="有"> 有</label><br>
+    <label><input type="radio" name="nap_habit" value="沒有"> 沒有</label>
+    </div>
+    <div>
+    <h3>睡前習慣（可複選）：</h3>
+    <input type="checkbox" id="electronic-devices" name="before-bed-habits" value="使用電子設備 (手機、平板電腦)">
+    <label for="electronic-devices">使用電子設備 (手機、平板電腦)</label><br>
+    <input type="checkbox" id="massage" name="before-bed-habits" value="按摩">
+    <label for="massage">按摩</label><br>
+    <input type="checkbox" id="milk" name="before-bed-habits" value="喝牛奶">
+    <label for="milk">喝牛奶</label><br>
+    <input type="checkbox" id="music" name="before-bed-habits" value="聽音樂">
+    <label for="music">聽音樂</label><br>
+    <input type="checkbox" id="tv" name="before-bed-habits" value="看電視">
+    <label for="tv">看電視</label><br>
+    </div>
+    <div>
+    <h3>是否有進行中高強度運動習慣？（例：跑步, 行山, 羽毛球）</h3>
+    <label><input type="radio" name="sport_habit" value="yes"> 是</label><br>
+    <label><input type="radio" name="sport_habit" value="no"> 否</label>
+    </div>
+    <div>
+    <h3>飲食習慣? （可複選）</h3>
+    <input type="checkbox" id="hot" name="eating_habits" value="辣">
+    <label for="hot">辣</label><br>
+    <input type="checkbox" id="caffeine" name="eating_habits" value="咖啡因">
+    <label for="caffeine">咖啡因</label><br>
+    <input type="checkbox" id="healthy_food" name="eating_habits" value="健康食品">
+    <label for="healthy_food">健康食品</label><br> 
+    <input type="checkbox" id="three_high" name="eating_habits" value="三高食品">
+    <label for="three_high">三高食品</label><br>
+    <input type="checkbox" id="good_shit" name="eating_habits" value="保健品">
+    <label for="good_shit">保健品</label><br>
+    </div> 
+    <div>
+    <h3>是否對現在的生活感到壓力?</h3>
+    <label><input type="radio" name="pressure" value="yes"> 是</label><br>
+    <label><input type="radio" name="pressure" value="no"> 否</label>
+    </div>
+    <div>
+    <h3>壓力來源</h3>
+    <label><input type="radio" name="main_pressure" value="academic"> 學業</label><br>
+    <label><input type="radio" name="main_pressure" value="money"> 金錢</label><br>
+    <label><input type="radio" name="main_pressure" value="family"> 家庭</label><br>
+    <label><input type="radio" name="main_pressure" value="peers"> 朋輩</label>
+    </div> 
+    <div>
+    <h3>您覺得壓力對您的睡眠有何影響?</h3>
+    <label><input type="radio" name="affects_to_sleep" value="沒有影響"> 沒有影響</label><br>
+    <label><input type="radio" name="affects_to_sleep" value="輕微影響"> 輕微影響</label><br>
+    <label><input type="radio" name="affects_to_sleep" value="中度影響"> 中度影響</label><br>
+    <label><input type="radio" name="affects_to_sleep" value="嚴重影響"> 嚴重影響</label>
+    </div> 
+    <div>
+    <h3>您是否有遇到以下睡眠症狀？（可複選）</h3>
+    <input type="checkbox" id="insomnia" name="sleep_problem" value="食慾變差">
+    <label for="insomnia">食慾變差</label><br>
+    <input type="checkbox" id="early_awakening" name="sleep_problem" value="床上無法入睡">
+    <label for="early_awakening">床上無法入睡</label><br>
+    <input type="checkbox" id="frequent_waking" name="sleep_problem" value="頻繁醒來（多次在夜間醒來）">
+    <label for="frequent_waking">頻繁醒來（多次在夜間醒來）</label><br>
+    <input type="checkbox" id="nightmare" name="sleep_problem" value="夢境使人有負面情緒">
+    <label for="nightmare">夢境使人有負面情緒</label><br>
+    <input type="checkbox" id="drowsiness" name="sleep_problem" value="疲倦、無精打采">
+    <label for="drowsiness">疲倦、無精打采</label><br>
+    <input type="checkbox" id="unable_to_concentrate" name="sleep_problem" value="無法集中注意力">
+    <label for="unable_to_concentrate">無法集中注意力</label>
+    </div> 
+ 
+  </form>
+  <hr>
+  <button type="button" class="submit-button" id="submit">Submit</button>
+  <script>
+    //first step
+    document.getElementById('submit').addEventListener('click', checkQ3);
+    // 失眠
+    var insomnia = 0;
+    
+    //睡眠節律障礙
+    var sleep_rhythm = 0;
+    
+    //過度睡眠原因
+    var cause_of_excessive_sleep = 0;
+    
+    //睡眠剝奪
+    var sleep_deprivation = 0;
+    
+    //多夢魘睡眠障礙
+    var multiple_nightmare_sleep_disorder = 0;
+    
+    
+    //checking Q3 is 5 or not if the value is 5 then open sleepwell.html
+    function checkQ3() {
+      var sleepQualityValue = document.querySelector('input[name="sleep_quality"]:checked').value;
+      if (sleepQualityValue === '5') {
+        open_sleepwell();
+      } else {
+        //main function!!!
+        checkwahtsleepingproblem();
+        go_slove_it();
+      };
+    }
+    
+    function check_insomnia() {
+      var sleep_schedule = document.querySelector('input[name="sleep_schedule"]:checked').value;
+      var daily_sleep_duration = document.querySelector('input[name="daily_sleep_duration"]:checked').value;
+      var affects_to_sleep = document.querySelector('input[name="affects_to_sleep"]:checked').value;
+      if (sleep_schedule === '1:00後') {
+        insomnia = insomnia + 1;
+      };
+      if (daily_sleep_duration === '少於4小時' || daily_sleep_duration === '4 - 6小時') {
+        insomnia = insomnia + 1;
+      };
+      if (document.getElementById("caffeine").checked) {
+        insomnia = insomnia + 1;
+      };
+      if (document.getElementById("unable_to_concentrate").checked) {
+        insomnia = insomnia + 1;
+      };
+      if (affects_to_sleep === '中度影響' || affects_to_sleep === '嚴重影響') {
+        insomnia = insomnia + 1;
+      };
+    }
+
+    function check_sleep_rhythm(){
+      var sleep_schedule = document.querySelector('input[name="sleep_schedule"]:checked').value;
+      var daily_sleep_duration = document.querySelector('input[name="daily_sleep_duration"]:checked').value;
+      var affects_to_sleep = document.querySelector('input[name="affects_to_sleep"]:checked').value;
+      if (sleep_schedule === '1:00後') {
+        sleep_rhythm = sleep_rhythm + 1;
+      };
+      if (daily_sleep_duration === '4 - 6小時') {
+        sleep_rhythm = sleep_rhythm + 1;
+      };
+      if (document.getElementById("caffeine").checked) {
+        sleep_rhythm = sleep_rhythm + 1;
+      };
+      if (document.getElementById("electronic-devices").checked) {
+        sleep_rhythm = sleep_rhythm + 1;
+      };
+      if (affects_to_sleep === '輕微影響') {
+        sleep_rhythm = sleep_rhythm + 1;
+      };
+    }
+    
+    function check_cause_of_excessive_sleep() {
+      var sleep_schedule = document.querySelector('input[name="sleep_schedule"]:checked').value;
+      var daily_sleep_duration = document.querySelector('input[name="daily_sleep_duration"]:checked').value; 
+      if (sleep_schedule === '1:00後') {
+        cause_of_excessive_sleep = cause_of_excessive_sleep + 1;
+      };
+      if (daily_sleep_duration === '8 - 10小時' || daily_sleep_duration === '超過10小時') {
+        cause_of_excessive_sleep = cause_of_excessive_sleep + 1;
+      };
+      if (document.getElementById("caffeine").checked) {
+        cause_of_excessive_sleep = cause_of_excessive_sleep + 1;
+      };
+      if (document.getElementById("insomnia").checked || document.getElementById("early_awakening").checked) {
+        cause_of_excessive_sleep = cause_of_excessive_sleep + 1;
+      };
+    }
+
+    function check_sleep_deprivation(){
+      var sleep_schedule = document.querySelector('input[name="sleep_schedule"]:checked').value;
+      var affects_to_sleep = document.querySelector('input[name="affects_to_sleep"]:checked').value;
+      if (sleep_schedule === '1:00後' || sleep_schedule === '12:01 - 1:00') {
+        sleep_deprivation = sleep_deprivation + 1;
+      };
+      if (affects_to_sleep === '中度影響') {
+        sleep_deprivation = sleep_deprivation + 1;
+      };
+      if (document.getElementById("unable_to_concentrate").checked) {
+        sleep_deprivation = sleep_deprivation + 1;
+      };
+      if (document.getElementById("caffeine").checked || document.getElementById("three_high").checked) {
+        sleep_deprivation = sleep_deprivation + 1;
+      };
+      if (document.getElementById("electronic-devices").checked || document.getElementById("tv").checked) {
+        sleep_deprivation = sleep_deprivation + 1;
+      };
+    }
+
+    function check_multiple_nightmare_sleep_disorder(){
+      var sleep_schedule = document.querySelector('input[name="sleep_schedule"]:checked').value;
+      var affects_to_sleep = document.querySelector('input[name="affects_to_sleep"]:checked').value;
+      var daily_sleep_duration = document.querySelector('input[name="daily_sleep_duration"]:checked').value;
+      if (sleep_schedule === '1:00後' || sleep_schedule === '12:01 - 1:00') {
+        multiple_nightmare_sleep_disorder = multiple_nightmare_sleep_disorder + 1;
+      };
+      if (daily_sleep_duration === '少於4小時' || daily_sleep_duration === '4 - 6小時') {
+        multiple_nightmare_sleep_disorder = multiple_nightmare_sleep_disorder + 1;
+      };
+      if (affects_to_sleep === '嚴重影響') {
+        multiple_nightmare_sleep_disorder = multiple_nightmare_sleep_disorder + 1;
+      };
+      if (document.getElementById("caffeine").checked) {
+        multiple_nightmare_sleep_disorder = multiple_nightmare_sleep_disorder + 1;
+      };
+      if (document.getElementById("nightmare").checked || document.getElementById("frequent_waking").checked) {
+        multiple_nightmare_sleep_disorder = multiple_nightmare_sleep_disorder + 1;
+      };
+    }
+
+    function checkwahtsleepingproblem() {
+      // 失眠
+      check_insomnia();
+      //睡眠節律障礙
+      check_sleep_rhythm();
+      //過度睡眠原因
+      check_cause_of_excessive_sleep();
+      //睡眠剝奪
+      check_sleep_deprivation();
+      //多夢魘睡眠障礙
+      check_multiple_nightmare_sleep_disorder();
+    }
+    
+    function go_slove_it() {
+      if (insomnia > 3) {
+        window.location.href = 'insomnia.html';
+      };
+      if (sleep_rhythm > 4) {
+        window.location.href = 'sleep_rhythm.html';
+      };
+      if (cause_of_excessive_sleep > 3) {
+        window.location.href = 'cause_of_excessive_sleep.html';
+      };
+      if (sleep_deprivation > 4) {
+        window.location.href = 'sleep_deprivation.html';
+      };
+      if (multiple_nightmare_sleep_disorder > 4) {
+        window.location.href = 'multiple_nightmare_sleep_disorder.html';
+      };
+    }
+    function open_sleepwell() {
+      window.location.href = 'sleepwell.html';
+    }
+
+  
+  </script>
+</body>
+</html>
